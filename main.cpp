@@ -1,4 +1,6 @@
 /******************************************************************************
+Array
+String
 binary search
 pattern makings 
 selection sort
@@ -9,7 +11,9 @@ LINKED LIST
 STACK
 queue
 BINARY TREE
+binary search tree
 heaps
 graphs
-
+hash map
+heap
 *******************************************************************************/
