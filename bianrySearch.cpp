@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-    // Binary search implementation
+    // Binary search implementation ...
 int binarySearch(int arr[], int size, int target) {
     int left = 0;
     int right = size - 1;
@@ -10,17 +10,17 @@ int binarySearch(int arr[], int size, int target) {
         int mid = left + (right - left) / 2;
 
         if (arr[mid] == target) {
-            return mid;  // Element found, return its index...
+            return mid;  // Element found, return its index ...
         }
 
         if (arr[mid] < target) {
-            left = mid + 1;  // Target is in the right half...
+            left = mid + 1;  // Target is in the right half ...
         } else {
-            right = mid - 1;  // Target is in the left half...
+            right = mid - 1;  // Target is in the left half ...
         }
     }
 
-    return -1;  // Element not found
+    return -1;  // Element not found ...
 }  
 
 int main(){
