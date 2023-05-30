@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+a=input("Enter your name")
+print(a)
+=======
 
 import sys
 import matplotlib
@@ -19,3 +23,5 @@ print("Hello World")
 #Two  lines to make our compiler able to draw:
 plt.savefig(sys.stdout.buffer)
 sys.stdout.flush()
+
+>>>>>>> 8f71937606a243d6666bddbd6e446611303d273b
