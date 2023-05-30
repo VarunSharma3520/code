@@ -1,7 +1,6 @@
-<<<<<<< HEAD
-#include <iostream>
+#include<iostream>
 using namespace std;
-=======
+
 /******************************************************************************
 Array
 String
@@ -21,14 +20,13 @@ graphs
 hash map
 heap
 *******************************************************************************/
->>>>>>> 8f71937606a243d6666bddbd6e446611303d273b
 
-<<<<<<< HEAD
+
 int main() {
-    for(int i = 0;i>=100;i++){
-        cout << "Hello World !\n";
-    }
+    int a=5;
+    int *b = &a;
+    cout<<b<<endl;
+    cout<<*b;
+    return 0;
 }
 
-=======
->>>>>>> 8f71937606a243d6666bddbd6e446611303d273b
