@@ -1,38 +1,48 @@
-# Node class to represent individual nodes in the linked list
 class Node:
-    def __init__(self, data):
+    def __init__(self,data):
         self.data = data
         self.next = None
 
-# Linked List class to manage the linked list operations
-class LinkedList:
+class Linked_List:
     def __init__(self):
-        self.head = None
-
-    def append(self, data):
-        new_node = Node(data)
+        self.pre = None
+    def create_from_end(self,data):
+        new_data = Node(data)
+        if self.pre is None:
+            self.pre = new_data
+        else: 
+            temp = self.pre
+            while temp.next:
+                temp = temp.next
+            temp.next = new_data
+    def create_from_start(self,data):
+        new_data = Node(data)
+        temp = self.pre
+        self.pre = new_data
+        new_data.next = temp
         
-        if self.head is None:
-            self.head = new_node
+    def read(self):
+        temp = self.pre
+        while temp is not None:
+            print(temp.data)
+            temp = temp.next
+    def delete_from_starting(self):
+        if self.pre is None:
+            print("Empty")
         else:
-            current = self.head
-            while current.next:
-                current = current.next
-            current.next = new_node
-
-    def display(self):
-        current = self.head
-        while current:
-            print(current.data, end=" ")
-            current = current.next
-        print()
-
-# Creating a linked list and adding elements
-linked_list = LinkedList()
-linked_list.append(1)
-linked_list.append(2)
-linked_list.append(3)
-linked_list.append(4)
-
-# Displaying the linked list
-linked_list.display()
+            self.pre = self.pre.next
+            self.read()
+varun = Linked_List()
+varun.create_from_end(10)
+varun.create_from_end(20)
+varun.create_from_end(30)
+varun.create_from_end(40)
+varun.create_from_end(50)
+varun.create_from_end(60)
+varun.create_from_end(70)
+varun.create_from_end(80)
+varun.create_from_end(90)
+varun.create_from_end(100)
+varun.create_from_start(0)
+varun.read()
+varun.delete_from_starting()
