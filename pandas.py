@@ -2,6 +2,7 @@ import os
 import pandas as pd
 
 df = pd.read_csv('sample_data/california_housing_test.csv')
+# df = pd.read_csv('sample_data/california_housing_test.csv',index_col=0)
 # df = pd.read_csv('sample_data/california_housing_test.csv',na_values=['??','????'])
 
 # print(type(df)) #<class 'pandas.core.frame.DataFrame'>
@@ -28,9 +29,9 @@ df.iat[4,3] #seeks a value at df.at(row_value,column_value)
 df.iat[4,3] = 11 #sets a value at df.at(row_value,column_value)
 df.loc[:,'total_rooms'] # gets a single table
 
-data Types in pandas 
-character: category, object
-numeric : int64, float64
+# data Types in pandas 
+# character: category, object
+# numeric : int64, float64
 
 df.dtypes # returns data types
 df.dtypes.value_counts() # counts type of data types
@@ -39,3 +40,11 @@ df.info() # gives infomation about memory,total cloumn, rangeIndex, Dtype,non nu
 np.unique(df['total_rooms']) # return unique dataTypes
 
 #astypes is used convert datatype in python
+'''
+
+df.nbytes for getting storage of a column
+df.replace([to_replace,value,inplace=True])
+df.isnull.sum()
+
+
+'''
