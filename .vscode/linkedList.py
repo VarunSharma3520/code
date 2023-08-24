@@ -34,5 +34,6 @@ linked_list.append(2)
 linked_list.append(3)
 linked_list.append(4)
 
+
 # Displaying the linked list
 linked_list.display()
