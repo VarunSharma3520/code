@@ -63,18 +63,18 @@ o/p: [95,100]
 #         oplist.append(listy[i])
 # print(oplist)
 
-t = ('Mr.X','Ms.y','Mr.S','Mrs.Y','Ms.F')
-d ={}
-for i in range(len(t)):
-    if 'Mrs.' in t[i]:
-        key = 'Mrs'
-        value = t[i][4:]
-        d.update({key:value})
-    if 'Ms.' in t[i]:
-        key = 'Ms'
-        value = t[i][3:]
-        d.update({key:value})
-print(d)
+# t = ('Mr.X','Ms.y','Mr.S','Mrs.Yo','Ms.F')
+# d ={}
+# for i in range(len(t)):
+#     if 'Mrs.' in t[i]:
+#         key = 'Mrs'
+#         value = t[i][4:]
+#         d.update({key:value})
+#     if 'Ms.' in t[i]:
+#         key = 'Ms'
+#         value = t[i][3:]
+#         d.update({key:value})
+# print(d)
 
 
 
