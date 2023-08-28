@@ -28,7 +28,8 @@ for i in range(n):
 # Question 9
 
 # Question 10
-
+for i in range(1,n+1):
+    print(str(i)*i+'\n')
 
 
 
