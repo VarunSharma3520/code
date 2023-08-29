@@ -25,6 +25,8 @@ for i in range(n):
 
 # Question 8
 
+
+
 # Question 9
 for i in range(1,n+3):
     print()
