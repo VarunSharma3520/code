@@ -19,7 +19,10 @@ for i in range(n+2):
 for i in range(n):
     print(" "*(n-i),"*"*i)
 
-# Question 6
+# Question 6 {Exact answer is not matching...}
+for i in range(1,n+2):
+    print(" "*i,"*"*(((n+1-i)*2)-1))
+
 
 # Question 7
 for i in range(1,(n+2)):
