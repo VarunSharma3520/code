@@ -1,7 +1,7 @@
 n = 5
 
 # question 1
-for i in range(n):
+for i in range(n+1):
     print("*"*i)
 
 # Question 2
@@ -28,8 +28,11 @@ for j in range(n+1):
     print("*"*(n-j))
 
 # Question 8
-
-
+for i in range(n+1):
+    print()
+    for j in range(1,n+1):
+        if i < (n+1-j):
+            print(j,end='')
 
 # Question 9
 for i in range(1,n+3):
