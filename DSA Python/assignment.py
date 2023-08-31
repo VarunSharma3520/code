@@ -13,3 +13,10 @@ for i in range(len(temp)):
     if temp[i] > avg:
         sum = sum + 1
 print(sum,"day(s) above average")
+
+# Q2: Find the pair of all numbers whose sum is given number:
+right_num = 0
+lefft_num = 0
+user_input = int(input("Enter any number : "))
+for i in range(user_input):
+    if right_num
