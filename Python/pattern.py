@@ -22,6 +22,10 @@ for i in range(n):
 # Question 6
 
 # Question 7
+for i in range(1,(n+2)):
+    print("*"*i)
+for j in range(n+1):
+    print("*"*(n-j))
 
 # Question 8
 
