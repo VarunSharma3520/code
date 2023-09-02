@@ -59,7 +59,7 @@ print(third_max(listy))
 
 # Que6. 
 
-# Que7. Check if an array is ascendin order
+# Que7. Check if an array is ascending order
 listy = [7,8,11,15,90]
 def isaccend(arr):
     for i in range(1,len(arr)):
@@ -81,7 +81,18 @@ print(sum_even(listy))
 # Que9. find prime number in a given range
 
 # Que10. Add two numbers represented by array...
-
+arr1 = [7,8,1,3,0]
+arr2 = [9,1,1,6,1,2]
+def addarray(arr1,arr2):
+    listy1 = ''
+    listy2 = ''
+    for i in arr1:
+        listy1 +=str(i)
+    for i in arr2:
+        listy2 +=str(i)
+    ans = list(str(int(listy1)+int(listy2)))
+    return ans
+print(addarray(arr1,arr2))
 
 
 
