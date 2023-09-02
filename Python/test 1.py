@@ -35,7 +35,25 @@ def del_element(arr1,elem):
     return listy
 print(del_element(arr1,13))
 
-
+# Que4. find third max element
+listy = [7,8,110,5,90]
+def third_max(arr):
+    fmax,smax,tmax = 0,0,0
+    for i in range(len(arr)):
+        if arr[i] > fmax:
+            tmax = smax
+            smax = fmax
+            fmax = arr[i]
+        elif arr[i] > smax:
+            tmax = smax
+            smax = arr[i]
+        elif arr[i] > tmax:
+            tmax = arr[i]
+        else:
+            pass
+    return tmax
+    
+print(third_max(listy))
 
 
 
