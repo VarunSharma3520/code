@@ -16,7 +16,7 @@ if user_input > 2:
         pre = pro
         pro = pro + c
 
-# Que2. merge two sorted array
+# Que2. merge two sorted array (to be completed)
 arr1 = [7,8,10,13,90]
 arr2 = [9,11,17,62,81,92]
 def merge_two_sorted_array(arr1,arr2):
@@ -54,6 +54,26 @@ def third_max(arr):
     return tmax
     
 print(third_max(listy))
+
+# Que5. 
+
+# Que6. 
+
+# Que7. 
+
+# Que8. Find the sum of even index in array
+listy = [7,8,110,5,90]
+def sum_even(arr):
+    sum = 0
+    for i in range(0,len(arr),2):
+        sum += arr[i]
+    return sum
+print(sum_even(listy))
+
+# Que9. find prime number in a given range
+
+
+# Que10. 
 
 
 
