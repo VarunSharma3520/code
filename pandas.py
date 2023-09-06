@@ -8,7 +8,7 @@ df = pd.read_csv('sample_data/california_housing_test.csv')
 # print(type(df)) #<class 'pandas.core.frame.DataFrame'>
 print(df.to_string()) 
 
-# How to copy CSV data in Python 
+# How to copy CSV data in Python Document 
 # Shallow copy 
 # Deep Copy
 
