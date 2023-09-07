@@ -120,7 +120,7 @@ print("Total no of even number : ",even)
 print("Total no of odd number : ",odd)
 
 
-#@15. WAP to calculate the surface area of a triangle. Take the required values as input.
+#15. WAP to calculate the surface area of a triangle. Take the required values as input.
 base = int(input("Enter the value of base of a triangle : "))
 height = int(input("Enter the value of height of a triangle : "))
 print("area of triangle : ",0.5*base*height)
