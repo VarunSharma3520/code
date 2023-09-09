@@ -13,3 +13,9 @@ def add(*a):
 add(5)
 add(5,6,"l",10)
 """
+
+"""
+Lamda Function:
+z = lambda x: x**2
+print(z(2))
+"""
