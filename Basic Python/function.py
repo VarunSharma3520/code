@@ -46,6 +46,7 @@ l = [1,2,3,4,5,6,7,8,9]
 n = list(map(str,l))
 print(n)
 
+# short - hand in python
 l1 = '123456'
 l2 = list(l1)
 print([int(x)**2 for x in l2 ])
