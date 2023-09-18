@@ -51,3 +51,13 @@ l2 = list(l1)
 print([int(x)**2 for x in l2 ])
 l3 = list(map(int,l2))
 print([x**2 for x in l3 ])
+
+def add(x = 1,y = 2):
+    return x+y
+def sub(x = 1,y = 2):
+    return x-y
+def mul(x = 1,y = 2):
+    return x*y
+l=[add,sub,mul]
+l1 = [i() for i in l]
+print(l1)
