@@ -5,7 +5,9 @@ keyword Arguement
 Default Argument
 Variable Length Arguement 
 """
+
 # Variable Length Argumet:
+
 """
 Variable Length Argument: Eg-> print()
 def add(*a):
