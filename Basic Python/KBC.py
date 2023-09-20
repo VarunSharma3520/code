@@ -1,4 +1,3 @@
-amount = 0
 level = 1
 question = [
     "Which one of the following river flows between Vindhyan and Satpura ranges?",
