@@ -1,4 +1,4 @@
-level = 1
+evel = 1
 question = [
     "Which one of the following river flows between Vindhyan and Satpura ranges?",
     "The Central Rice Research Station is situated in?",
@@ -13,10 +13,10 @@ question = [
     ]
 option = [
     [
-        "NARMADA",
-        "MAHANADI",
-        "SON",
-        "NEtravati"],
+        "Narmada",
+        "Mahanadi",
+        "Son",
+        "Netravati"],
     [
         "Chennai",
         "Cuttack",
@@ -85,21 +85,32 @@ def showQuestion(pos):
         print(numbering,i)
         numbering += 1
 
-def answerChecker(pos,answer):
-    if answer in option[pos]:
+def answerChecker(pos,ans):
+    if ans in option[pos]:
         return True
     else:
         False
 
-
+def showLifeLine():
+    print("""Press 1 for flip the Question
+Press 2 for 50-50""")
+    while True:
+        lifeLineChoice = eval(input())
+        if lifeLineChoice == 1:
+            break
+        elif lifeLineChoice == 2:
+            break
+        else:
+            print("You entered wrong choice...")
 # first Question
 print("Welcome to KBC")
 print("Question for",level*1000,"inr")
 print("Q:->")
 showQuestion(0)
-answer = input("Enter you choice number : ")
-if answerChecker(0,answer) == True:
+ans = input("Enter you choice number : ")
+if answerChecker(0,ans) == True:
     level += 1
+    print("You Enter Correct Answer....")
     # Iterates from second to ten
     for i in range(1,10):
         playChoice = int(input("""\n\n\nDo You Want To Play Again?
