@@ -1,11 +1,15 @@
 # Exception Handling
 # Exception is which can interrupt program functioning while excecuting script
+
+
 '''
 try:
 except:
 else:
 finally:
 '''
+
+
 '''
 In case of error:
 try:
@@ -16,6 +20,7 @@ try:
 else:
 finally:
 '''
+
 
 # Method 1 
 
@@ -58,3 +63,17 @@ finally:
 #         print("pass")
 #     else:
 #         print("fail")
+
+# try:
+#     m = int(input())
+#     if m == 1: print(len(m))
+#     elif m == 2: import yoyo
+#     else: print({1:3}[5])
+# except TypeError:
+#     print("TypeError")
+# except ValueError:
+#     print("TypeError")
+# except:
+#     print("Some Error")
+# else:
+#     print("Worked Perfectly")
