@@ -16,6 +16,9 @@ try:
 else:
 finally:
 '''
+
+# Method 1 
+
 # def script():
 #     marks = int(input("Enter any number..."))
 #     if marks > 40 :
@@ -28,6 +31,8 @@ finally:
 #     print("An Error Occured ")
 #     script()
 
+# Method 2
+
 # def script():
 #     marks = int(input("Enter any number..."))
 #     return marks
@@ -36,6 +41,18 @@ finally:
 # except:
 #     print("An Error Occured ")
 #     marks = script()
+# else:
+#     if marks > 40 :
+#         print("pass")
+#     else:
+#         print("fail")
+
+# Method 3
+
+# try:
+#     marks = int(input("Enter any number..."))
+# except:
+#     print("An Error Occured ")
 # else:
 #     if marks > 40 :
 #         print("pass")
