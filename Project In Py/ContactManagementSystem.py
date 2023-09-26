@@ -6,28 +6,33 @@ def create(contacts):
     contacts.append([contactName,contactNumber])
     print("you number added successfully...\n")
     return contacts
+
 def read(contacts):
-    print("""Press 1 for seacrch by name
-Press 2 for search by number""")
+    search = False
     while True:
+        print("""Press 1 for seacrch by name
+Press 2 for search by number
+Press 0 for main menu""")
         searchChoice = int(input("Enter your choice..."))
         if searchChoice == 1:
             searchTerm = input("Enter your search term...")
-            for i in contacts:
+            for i in range(len(contacts)):
                 if searchTerm in contacts[i][0]:
                     print(contacts[i])
-            else:
-                print("No contacts found....")
+                    search = True
         elif searchChoice == 2:
             searchTerm = input("Enter your search term...")
-            for i in contacts:
+            for i in range(len(contacts)):
                 if searchTerm in contacts[i][1]:
                     print(contacts[i])
-            else:
-                print("No contacts found....")
+                    search = True
+        elif searchChoice == 0:
+            break
         else:
             print("You entered wrong choice")
             print("You May Try Again")
+    if search == False:
+            print("No contacts found....")
 def update(contacts):
     pass
 def delete(contacts):
