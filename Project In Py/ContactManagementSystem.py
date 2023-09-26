@@ -43,7 +43,7 @@ Press 2 for delete by number
 Press 0 for main menu""")
         deleteChoice = int(input("Enter your choice..."))
         if deleteChoice == 1:
-            deleteTerm = input("Enter your search term...")
+            deleteTerm = input("Enter your delete term...")
             for i in range(len(contacts)):
                 if deleteTerm in contacts[i][0]:
                     delete = True
@@ -51,7 +51,7 @@ Press 0 for main menu""")
                 else:
                     listy.append(contacts[i])
         elif deleteChoice == 2:
-            deleteTerm = input("Enter your search term...")
+            deleteTerm = input("Enter your delete term...")
             for i in range(len(contacts)):
                 if deleteTerm in contacts[i][1]:
                     delete = True
