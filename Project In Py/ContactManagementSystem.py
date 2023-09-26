@@ -72,10 +72,14 @@ def update(contacts):
     listy = delete(contacts)
     listy = create(listy)
     return listy
+
 def showAll(contacts):
-    print(["Name","Number"])
-    for i in contacts:
-        print(i)
+    if len(contacts) == 0:
+        print("No contacts found")
+    else:   
+        print(["Name","Number"])
+        for i in contacts:
+            print(i)
 while True:
     print("""
     Press 1 for add new contact
