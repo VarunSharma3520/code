@@ -41,7 +41,7 @@ def delete(contacts):
         print("""Press 1 for delete by name
 Press 2 for delete by number
 Press 0 for main menu""")
-        deleteChoice = eval(input("Enter your choice..."))
+        deleteChoice = int(input("Enter your choice..."))
         if deleteChoice == 1:
             deleteTerm = input("Enter your search term...")
             for i in range(len(contacts)):
@@ -69,8 +69,9 @@ Press 0 for main menu""")
         return listy
 
 def update(contacts):
-    delete(contacts)
-    create(contacts)
+    listy = delete(contacts)
+    listy = create(listy)
+    return listy
 def showAll(contacts):
     print(["Name","Number"])
     for i in contacts:
@@ -84,7 +85,7 @@ while True:
     Press 5 for show all contact
     Press 0 to terminate program
     """)
-    user_choice = eval(input("Enter your choice here..."))
+    user_choice = int(input("Enter your choice here..."))
     if user_choice == 0:
         print("\n\nProgram Terminated Successfully..")
         print("Thank You!")
