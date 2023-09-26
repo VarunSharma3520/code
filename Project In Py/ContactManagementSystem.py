@@ -33,10 +33,44 @@ Press 0 for main menu""")
             print("You May Try Again")
     if search == False:
             print("No contacts found....")
-def update(contacts):
-    pass
+
 def delete(contacts):
-    pass
+    listy = []
+    delete = False
+    while True:
+        print("""Press 1 for delete by name
+Press 2 for delete by number
+Press 0 for main menu""")
+        deleteChoice = eval(input("Enter your choice..."))
+        if deleteChoice == 1:
+            deleteTerm = input("Enter your search term...")
+            for i in range(len(contacts)):
+                if deleteTerm in contacts[i][0]:
+                    delete = True
+                    continue
+                else:
+                    listy.append(contacts[i])
+        elif deleteChoice == 2:
+            deleteTerm = input("Enter your search term...")
+            for i in range(len(contacts)):
+                if deleteTerm in contacts[i][1]:
+                    delete = True
+                    continue
+                else:
+                    listy.append(contacts[i])
+        elif deleteChoice == 0:
+            break
+        else:
+            print("You entered wrong choice")
+            print("You May Try Again")
+    if delete == False:
+        print("No contacts found....")
+    else:
+        return listy
+
+def update(contacts):
+    delete(contacts)
+    create(contacts)
 def showAll(contacts):
     print(["Name","Number"])
     for i in contacts:
