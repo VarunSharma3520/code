@@ -74,6 +74,8 @@ def update(contacts):
     return listy
 
 def showAll(contacts):
+
+
     if len(contacts) == 0:
         print("No contacts found")
     else:   
