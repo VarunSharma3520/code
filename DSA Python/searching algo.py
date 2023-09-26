@@ -13,15 +13,18 @@ def Binary(arr,elem):
     start = 0
     end = len(arr) - 1
     while start <= end:
+        
         mid = start + (end - start)//2
+        
         if arr[mid] == elem:
             return [elem,mid]
-        elif arr[mid] < elem:
+            
+        # positioning
+        if arr[mid] < elem:
             start = mid + 1
-        elif arr[mid] > elem:
-            end = mid - 1
         else:
-            pass
+            end = mid - 1
+    
     else:
         return None
             
