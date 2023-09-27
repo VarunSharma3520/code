@@ -14,14 +14,13 @@ def read(contacts):
 Press 2 for search by number
 Press 0 for main menu""")
         searchChoice = int(input("Enter your choice..."))
+        searchTerm = input("Enter your search term...")
         if searchChoice == 1:
-            searchTerm = input("Enter your search term...")
             for i in range(len(contacts)):
                 if searchTerm in contacts[i][0]:
                     print(contacts[i])
                     search = True
         elif searchChoice == 2:
-            searchTerm = input("Enter your search term...")
             for i in range(len(contacts)):
                 if searchTerm in contacts[i][1]:
                     print(contacts[i])
@@ -31,8 +30,9 @@ Press 0 for main menu""")
         else:
             print("You entered wrong choice")
             print("You May Try Again")
-    if search == False:
-            print("No contacts found....")
+    else:
+        if search == False:
+                print("No contacts found....")
 
 def delete(contacts):
     listy = []
@@ -42,8 +42,8 @@ def delete(contacts):
 Press 2 for delete by number
 Press 0 for main menu""")
         deleteChoice = int(input("Enter your choice..."))
+        deleteTerm = input("Enter your delete term...")
         if deleteChoice == 1:
-            deleteTerm = input("Enter your delete term...")
             for i in range(len(contacts)):
                 if deleteTerm in contacts[i][0]:
                     delete = True
@@ -51,7 +51,6 @@ Press 0 for main menu""")
                 else:
                     listy.append(contacts[i])
         elif deleteChoice == 2:
-            deleteTerm = input("Enter your delete term...")
             for i in range(len(contacts)):
                 if deleteTerm in contacts[i][1]:
                     delete = True
