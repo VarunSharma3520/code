@@ -1,4 +1,3 @@
-
 contacts = []
 def create(contacts):
     contactName = input("Enter your name")
@@ -6,7 +5,6 @@ def create(contacts):
     contacts.append([contactName,contactNumber])
     print("you number added successfully...\n")
     return contacts
-
 def read(contacts):
     search = False
     while True:
@@ -33,7 +31,6 @@ Press 0 for main menu""")
     else:
         if search == False:
                 print("No contacts found....")
-
 def delete(contacts):
     listy = []
     delete = False
@@ -66,15 +63,12 @@ Press 0 for main menu""")
         print("No contacts found....")
     else:
         return listy
-
 def update(contacts):
     listy = delete(contacts)
     listy = create(listy)
     return listy
 
 def showAll(contacts):
-
-
     if len(contacts) == 0:
         print("No contacts found")
     else:   
