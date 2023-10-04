@@ -1,4 +1,4 @@
-level = 1213211
+level = 1
 question = [
     "Which one of the following river flows between Vindhyan and Satpura ranges?",
     "The Central Rice Research Station is situated in?",
