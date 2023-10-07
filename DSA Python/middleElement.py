@@ -52,7 +52,7 @@ linky.append(5)
 linky.append(6)
 linky.append(7)
 linky.showTime()
-linky.reverseLL()
+linky.find_middle()
 linky.showTime()
 
 
