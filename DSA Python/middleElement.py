@@ -26,17 +26,13 @@ class LL():
             self.tail.next = node
             self.tail = node
         self.length += 1
-    def find_middle(self):
+    def reverseLL(self):
+        temp_head = self.head
         cursor = self.head
-        n = self.length//2 + 1
-        count = 0
-        string = ""
-        while cursor is not None:
-            if n < count:
-                print(cursor.value)
-            count += 1 
-            cursor = cursor.next
-
+        for i in range(self.length):
+            self.tail = self.head
+            self.head.next = None
+        self.head,self.tail = self.tail,self.head
     def showTime(self):
         cursor = self.head
         string = ""
@@ -50,5 +46,11 @@ linky.append(2)
 linky.append(3)
 linky.append(4)
 linky.append(5)
+linky.append(6)
+linky.append(7)
 linky.showTime()
-linky.find_middle()
+linky.reverseLL()
+linky.showTime()
+
+
+
