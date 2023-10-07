@@ -28,13 +28,13 @@ class LL():
         self.length += 1
     def find_middle(self):
         cursor = self.head
-        n = self.length//2 + 1
+        n = self.length//2
         count = 0
         string = ""
         while cursor is not None:
+            count += 1 
             if n < count:
                 print(cursor.value)
-            count += 1 
             cursor = cursor.next
     def showTime(self):
         cursor = self.head
@@ -53,7 +53,6 @@ linky.append(6)
 linky.append(7)
 linky.showTime()
 linky.find_middle()
-linky.showTime()
 
 
 
