@@ -27,6 +27,7 @@ class LL():
         self.length += 1
     def find_middle(self):
         cursor = self.head
+        for i in range(len())
     def showTime(self):
         cursor = self.head
         string = ""
