@@ -1,6 +1,7 @@
 """
 class Variable and Instance Variable
 """
+
 class human():
     count = 0
     def __init__(self,human,gender): # constructor
@@ -8,6 +9,7 @@ class human():
         self.gender = gender
         self.name = name
     def __del__(self):  # destructor
+        human.count -=  1
 
 h1 = human("Varun","M")
 h2 = human("Nisha","F")
