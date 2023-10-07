@@ -24,10 +24,19 @@ class LL():
             self.tail = node
         else:
             self.tail.next = node
+            self.tail = node
         self.length += 1
     def find_middle(self):
         cursor = self.head
-        for i in range(len())
+        n = self.length//2 + 1
+        count = 0
+        string = ""
+        while cursor is not None:
+            if n < count:
+                print(cursor.value)
+            count += 1 
+            cursor = cursor.next
+
     def showTime(self):
         cursor = self.head
         string = ""
@@ -39,4 +48,7 @@ class LL():
 linky = LL()
 linky.append(2)
 linky.append(3)
+linky.append(4)
+linky.append(5)
 linky.showTime()
+linky.find_middle()
