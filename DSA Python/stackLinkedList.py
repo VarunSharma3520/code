@@ -20,7 +20,7 @@ class Stack():
             return True
         return False
     def peek(self):
-        return self.head.value
+        return self.head.data
     def showTime(self):
         cursor = self.head
         while cursor is not None:

@@ -5,11 +5,11 @@
 # Input: head = [1,2,3,4,5,6]
 # Output: [4,5,6]
 # Explanation: Since the list has two middle nodes with 
-# values 3 and 4, we return the second one.
+# datas 3 and 4, we return the second one.
 
 class Node():
-    def __init__(self,value):
-        self.value = value
+    def __init__(self,data):
+        self.data = data
         self.next = None
 
 class LL():
@@ -17,8 +17,8 @@ class LL():
         self.head = None
         self.tail = None
         self.length = 0
-    def append(self,value):
-        node = Node(value)
+    def append(self,data):
+        node = Node(data)
         if self.head is None:
             self.head = node
             self.tail = node
@@ -34,13 +34,13 @@ class LL():
         while cursor is not None:
             count += 1 
             if n < count:
-                print(cursor.value)
+                print(cursor.data)
             cursor = cursor.next
     def showTime(self):
         cursor = self.head
         string = ""
         while cursor is not None:
-            string += str(cursor.value) + " -> "
+            string += str(cursor.data) + " -> "
             cursor = cursor.next
         print("head -> ",string,"None ")
 

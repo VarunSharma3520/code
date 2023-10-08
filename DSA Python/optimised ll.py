@@ -1,11 +1,11 @@
 class Node:
-    def __init__(self, value):
-        self.value = value
+    def __init__(self, data):
+        self.data = data
         self.next = None
 
 class LinkedList:
-    # def __init__(self, value):
-    #     new_node = Node(value)
+    # def __init__(self, data):
+    #     new_node = Node(data)
     #     self.head = new_node
     #     self.tail = new_node
     #     self.length = 1
@@ -19,14 +19,14 @@ class LinkedList:
         temp_node = self.head
         result = ''
         while temp_node is not None:
-            result += str(temp_node.value)
+            result += str(temp_node.data)
             if temp_node.next is not None:
                 result += ' -> '
             temp_node = temp_node.next
         return result
     
-    def append(self, value):
-        new_node = Node(value)
+    def append(self, data):
+        new_node = Node(data)
         if self.head is None:
             self.head = new_node
             self.tail = new_node
@@ -35,8 +35,8 @@ class LinkedList:
             self.tail = new_node
         self.length += 1
     
-    def prepend(self, value):
-        new_node = Node(value)
+    def prepend(self, data):
+        new_node = Node(data)
         if self.head is None:
             self.head = new_node
             self.tail = new_node
@@ -45,8 +45,8 @@ class LinkedList:
             self.head = new_node
         self.length += 1
     
-    def insert(self, index, value):
-        new_node = Node(value)
+    def insert(self, index, data):
+        new_node = Node(data)
         if self.head is None:
             self.head = new_node
             self.tail = new_node
@@ -64,13 +64,13 @@ class LinkedList:
     def traverse(self):
         current = self.head
         while current is not None:
-            print(current.value)
+            print(current.data)
             current = current.next
     
     def search(self, target):
         current = self.head
         while current is not None:
-            if current.value == target:
+            if current.data == target:
                 return True
             current = current.next
         return False
@@ -79,7 +79,7 @@ class LinkedList:
         current = self.head
         index = 0
         while current is not None:
-            if current.value == target:
+            if current.data == target:
                 return index
             current = current.next
             index += 1
@@ -95,10 +95,10 @@ class LinkedList:
             current = current.next
         return current
     
-    def set_value(self, index, value):
+    def set_data(self, index, data):
         temp = self.get(index)
         if temp:
-            temp.value = value
+            temp.data = data
             return True
         return False
     

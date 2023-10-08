@@ -20,20 +20,7 @@ class LinkedList():
             self.tail.next = node
             self.tail = node
         self.length += 1
-    
-    def reverseLL(self):
-        if self.head == None:
-            return -1
-        else:
-            cursor = self.head
-            prev = None
-            while cursor is not None:
-                next_node = cursor.next
-                cursor.next = prev
-                prev = cursor
-                cursor = next_node
-            self.head = prev
-    
+        
     def showTime(self):
         cursor = self.head
         string = ""
@@ -42,13 +29,22 @@ class LinkedList():
             cursor = cursor.next
         print("head ->", string, "None")
 
+def mergell(l1,l2):
+    if l1.head == None and l2.head == None:
+        return None
+    elif l1.head == None and l2.head != None:
+        return l2
+    elif l1.head != None and l2.head == None:
+        return l2
+    
+    
 linky = LinkedList()
 linky.append(2)
-linky.append(3)
-linky.append(4)
-linky.append(5)
-linky.append(6)
-linky.append(7)
-linky.showTime()
-linky.reverseLL()
-linky.showTime()
+linky.append(9)
+linky.append(11)
+ll = LinkedList()
+ll.append(3)
+ll.append(6)
+ll.append(7)
+mergell(linky,ll)
+

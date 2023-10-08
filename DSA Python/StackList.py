@@ -3,11 +3,11 @@ class Stack:
         self.list = []
         self.length = 0
     def __str__(self):
-        values = self.list.reverse()
-        values = [str(x) for x in self.list]
-        return '\n'.join(values)
-    def push(self,value):
-        self.list.append(value)
+        datas = self.list.reverse()
+        datas = [str(x) for x in self.list]
+        return '\n'.join(datas)
+    def push(self,data):
+        self.list.append(data)
         self.length += 1
     def pop(self):
         self.list.pop()

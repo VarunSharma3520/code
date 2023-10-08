@@ -1,6 +1,6 @@
 class Node:
-    def __init__(self, value):
-        self.value = value
+    def __init__(self, data):
+        self.data = data
         self.next = None
 
 class LinkedList:
@@ -13,14 +13,14 @@ class LinkedList:
         temp_node = self.head
         result = ''
         while temp_node is not None:
-            result += str(node.value)
+            result += str(node.data)
             if temp_node.next is not None:
                 result += ' -> '
             temp_node = temp_node.next
         return result
     
-    def append(self, value):
-        new_node = Node(value)
+    def append(self, data):
+        new_node = Node(data)
         if self.head is None:
             self.head = new_node
             self.tail = new_node
@@ -43,8 +43,8 @@ def remove_duplicates(ll):
     listy = []
     cursor = ll.head
     while cursor is not None:
-        if cursor.value not in listy:
-            listy.append(cursor.value)
+        if cursor.data not in listy:
+            listy.append(cursor.data)
         cursor = cursor.next
     ll.head = None
     ll.tail = None
@@ -55,6 +55,6 @@ def remove_duplicates(ll):
 def printy(ll):
     cursor = ll.head
     while cursor is not None:
-        print(cursor.value)
+        print(cursor.data)
         cursor = cursor.next
 printy(remove_duplicates(ll))

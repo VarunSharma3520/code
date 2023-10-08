@@ -1,7 +1,7 @@
 
 class Node:
-    def __init__(self, value):
-        self.value = value
+    def __init__(self, data):
+        self.data = data
         self.next = None
 
 class LinkedList:
@@ -14,14 +14,14 @@ class LinkedList:
         temp_node = self.head
         result = ''
         while temp_node is not None:
-            result += str(node.value)
+            result += str(node.data)
             if temp_node.next is not None:
                 result += ' -> '
             temp_node = temp_node.next
         return result
     
-    def append(self, value):
-        new_node = Node(value)
+    def append(self, data):
+        new_node = Node(data)
         if self.head is None:
             self.head = new_node
             self.tail = new_node
@@ -45,7 +45,7 @@ def ll2num(linky):
     cursor = linky.head
     counter = 1
     while cursor is not None:
-        num = num + cursor.value*counter
+        num = num + cursor.data*counter
         cursor = cursor.next
         counter = counter*10
     return num
@@ -63,7 +63,7 @@ def printy(ll):
     string =''
     cursor = ll.head
     while cursor is not None:
-        string += str(cursor.value) + ' -> '
+        string += str(cursor.data) + ' -> '
         cursor = cursor.next
     print(string+" None")
 printy(sum_list(ll,ll2))
