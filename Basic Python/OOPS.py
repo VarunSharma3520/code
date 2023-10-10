@@ -53,9 +53,9 @@ g1 = gun()
 # ---> object is an actual implementation of the class
 # ---> instance is the virtual copy of the object
 
-class car:
+class Car:
     name = 'ferrari'
     def color(self):
         print("car.color -> red")
-c1 = car()
+c1 = Car()
 print(c1.color())
