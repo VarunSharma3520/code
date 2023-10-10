@@ -14,18 +14,18 @@
 # 3. class - is a blueprint/ templates 
 # creating a class from syntax -
 
-class human:
+class Human:
     hair = True
     def walk(self):
-        print("human.walk -> i can walk")
+        print("Human.walk -> i can walk")
         
 class ant: 
     hair = False 
     def run(self):
         print("ant.run -> i can run")
         
-h1 = human()
-h2 = human()
+h1 = Human()
+h2 = Human()
 print(h1.hair)
 print(h2.hair)
 print(h3 = ant)
