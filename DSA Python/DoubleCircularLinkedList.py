@@ -41,5 +41,6 @@ class LinkedList():
         pass
 
     def drop(self):
-        
-ll = LinkedList():
+        pass
+
+ll = LinkedList()
