@@ -42,3 +42,4 @@ class LinkedList():
 
     def drop(self):
         
+ll = LinkedList():
