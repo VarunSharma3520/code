@@ -20,10 +20,11 @@ class LinkedList():
         pass
 
     def find(self,data):
+        
         pass
 
     def get(self,index):
-        
+
         pass
 
     def setat(self,index):
