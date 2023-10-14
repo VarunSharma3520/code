@@ -7,7 +7,7 @@ class Node():
 class DLL():
     def __init__(self):
         self.head = None
-        self.head = None
+        self.tail = None
         self.length = 0
     
     def append(self,data):
