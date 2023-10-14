@@ -99,15 +99,10 @@ class LinkedList():
 
     def pop(self,index):
         cursor = self.head
-        counter = 0
-        while cursor is not None:
-            if counter == index:
-                cursor.next = cursor.next.next
-                break
+        for _ in range(index-1):
             cursor = cursor.next
-            counter += 1
-            if cursor == self.head:
-                break
+        cursor.next = cursor.next.next
+        self.length += 1
 
     def remove(self,data):
         if self.head is None:
@@ -129,16 +124,16 @@ class LinkedList():
 ll = LinkedList()
 ll.append(1)
 ll.append(2)
-# ll.insert(999,2) not working
+ll.insert(999,2)
 ll.append(3)
 ll.append(4)
 ll.prepend(0)
 ll.showTime()
-# print(ll.find(3))
-# print(ll.get(2))
+print(ll.find(3))
+print(ll.get(2))
 ll.setat(456,2)
-# ll.pop(2)
-# ll.popFirst()
+ll.pop(3) # Not working
+ll.popFirst()
 ll.remove(456)
 ll.showTime()
 ll.drop()
