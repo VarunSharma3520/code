@@ -28,7 +28,7 @@ class LinkedList():
     def setat(self,index):
         pass
 
-    def showTime():
+    def showTime(self):
         pass
     
     def popFirst(self):
