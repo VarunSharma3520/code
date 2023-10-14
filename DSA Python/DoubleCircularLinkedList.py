@@ -10,7 +10,3 @@ class LinkedList():
         self.tail = None
         self.length = 0
         
-        
-        .
-
-dcll = LinkedList()
