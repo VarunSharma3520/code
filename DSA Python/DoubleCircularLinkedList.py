@@ -46,3 +46,17 @@ class LinkedList():
         pass
 
 ll = LinkedList()
+ll.append(2)
+ll.append(3)
+ll.append(4)
+ll.append(6)
+ll.insert(5)
+ll.prepend(1)
+ll.showTime()
+ll.find(2)
+ll.get(2)
+ll.setat("Varun Sharma",2)
+ll.popFirst()
+ll.pop(1)
+ll.remove(5)
+ll.drop()
