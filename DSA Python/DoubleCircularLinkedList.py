@@ -11,27 +11,55 @@ class LinkedList():
         self.length = 0
         
     def prepend(self,data):
-        pass
+        node= Node(data)
+        if self.head == None:
+            node.pre = node
+            node.next = node
+            self.head = node
+            self.tail = node
+            self.length = 1
+        else:
+            node.next = self.head
+            self.head.pre = node
+            node.pre = self.tail
+            self.head = self.head.next
+            self.length += 1
     
     def insert(self,data,index):
-        pass
+        node= Node(data)
+        if self.head == None:
+            node.pre = node
+            node.next = node
+            self.head = node
+            self.tail = node
+            self.length = 1
+        else:
+            pass
 
     def append(self,data):
-        pass
+        node= Node(data)
+        if self.head == None:
+            node.pre = node
+            node.next = node
+            self.head = node
+            self.tail = node
+            self.length = 1
+        else:
+            pass
 
     def find(self,data):
-        
         pass
 
     def get(self,index):
-
         pass
 
     def setat(self,index):
         pass
 
     def showTime(self):
-        pass
+        cursor = self.head
+        for i in range(self.length):
+            print(cursor.data)
     
     def popFirst(self):
         pass
@@ -46,17 +74,7 @@ class LinkedList():
         pass
 
 ll = LinkedList()
-ll.append(2)
-ll.append(3)
-ll.append(4)
-ll.append(6)
-ll.insert(5)
-ll.prepend(1)
+ll.prepend(2)
+# ll.prepend(2)
+# ll.prepend(3)
 ll.showTime()
-ll.find(2)
-ll.get(2)
-ll.setat("Varun Sharma",2)
-ll.popFirst()
-ll.pop(1)
-ll.remove(5)
-ll.drop()
