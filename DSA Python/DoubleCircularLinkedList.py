@@ -46,7 +46,12 @@ class LinkedList():
             self.tail = node
             self.length = 1
         else:
-            pass
+            node.pre = self.tail
+            node.next = self.head
+            self.tail.next = node
+            self.head.pre = node
+            self.tail = self.tail.next
+            self.length += 1
 
     def find(self,data):
         pass
@@ -58,11 +63,13 @@ class LinkedList():
         pass
 
     def showTime(self):
+        string = 'Head -> '
         cursor = self.head
         for i in range(self.length):
-            print(cursor.data)
+            string += str(cursor.data) + ' -> '
             cursor = cursor.next
-    
+        string += 'Tail'
+        print(string)
     def popFirst(self):
         pass
 
@@ -76,13 +83,13 @@ class LinkedList():
         pass
 
 ll = LinkedList()
-ll.prepend(2)
-ll.prepend(99)
-ll.prepend(3)
-# ll.append(2)
-# ll.append(3)
-# ll.append(4)
-# ll.append(6)
+# ll.prepend(2)
+# ll.prepend(99)
+# ll.prepend(3)
+ll.append(2)
+ll.append(3)
+ll.append(4)
+ll.append(6)
 # ll.insert(5)
 ll.prepend(1)
 ll.showTime()
