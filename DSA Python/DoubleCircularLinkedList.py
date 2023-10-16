@@ -20,9 +20,10 @@ class LinkedList():
             self.length = 1
         else:
             node.next = self.head
-            self.head.pre = node
             node.pre = self.tail
-            self.head = self.head.next
+            self.head.pre = node
+            self.tail.next = node
+            self.head = self.head.pre
             self.length += 1
     
     def insert(self,data,index):
@@ -60,6 +61,7 @@ class LinkedList():
         cursor = self.head
         for i in range(self.length):
             print(cursor.data)
+            cursor = cursor.next
     
     def popFirst(self):
         pass
@@ -75,6 +77,19 @@ class LinkedList():
 
 ll = LinkedList()
 ll.prepend(2)
-# ll.prepend(2)
-# ll.prepend(3)
+ll.prepend(99)
+ll.prepend(3)
+# ll.append(2)
+# ll.append(3)
+# ll.append(4)
+# ll.append(6)
+# ll.insert(5)
+ll.prepend(1)
 ll.showTime()
+# ll.find(2)
+# ll.get(2)-
+# ll.setat("Varun Sharma",2)
+# ll.popFirst()
+# ll.pop(1)
+# ll.remove(5)
+ll.drop()
