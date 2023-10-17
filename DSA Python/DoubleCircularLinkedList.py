@@ -103,7 +103,6 @@ class LinkedList():
         if self.length == 0:
             return None
         else:
-            return self.head.data
             pass
 
     def pop(self, index):
