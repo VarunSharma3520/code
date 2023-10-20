@@ -10,6 +10,9 @@ Breath First Search
 
 Searching in BinaryTree:
 We use Level order Traversal in Searching because DFS uses queue instead of stack
+
+Insert in BinaryTree:
+We use Level order Traversal in inserting because DFS uses queue instead of stack
     '''
 class TreeNode():
     def __init__(self,data = None):
@@ -63,10 +66,8 @@ def levelOrderTraversal(rootNode):
         while len(queue) !=  0:
             rootNode = queue.pop(0)
             print(rootNode.data)
-            if rootNode.leftChild is not None:
-                queue.append(rootNode.leftChild)
-            if rootNode.rightChild is not None:
-                queue.append(rootNode.rightChild)
+            if rootNode.leftChild is not None:queue.append(rootNode.leftChild)
+            if rootNode.rightChild is not None: queue.append(rootNode.rightChild)
 
 def find(rootNode, value):
     if not rootNode:
