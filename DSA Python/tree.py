@@ -68,7 +68,7 @@ def levelOrderTraversal(rootNode):
             if rootNode.rightChild is not None:
                 queue.append(rootNode.rightChild)
 
-def find(rootNode, data):
+def find(rootNode, value):
     if not rootNode:
         return -1
     else:
@@ -76,7 +76,7 @@ def find(rootNode, data):
         queue.append(rootNode)
         while len(queue) != 0:
             rootNode = queue.pop(0)
-            if rootNode.data == data:
+            if rootNode.data == value:
                 return 1
             if rootNode.leftChild is not None:
                 queue.append(rootNode.leftChild)
@@ -84,8 +84,29 @@ def find(rootNode, data):
                 queue.append(rootNode.rightChild)
         return 0
 
+def insert(rootNode,data):
+    if not rootNode:
+        return TreeNode(data)
+    else:
+        queue = []
+        queue.append(rootNode)
+        while len(queue) != 0:
+            rootNode = queue.pop(0)
+            if rootNode.leftChild is not None:
+                queue.append(rootNode.leftChild)
+            else:
+                rootNode.leftChild = TreeNode(data)
+                break
+            if rootNode.rightChild is not None:
+                queue.append(rootNode.rightChild)
+            else:
+                rootNode.leftChild = TreeNode(data)
+                break
+
 
 # print(deleteBT(newBT))
 # print(preOrderTraversal(newBT))
 print(levelOrderTraversal(newBT))
-print(find(newBT,1))
+# print(find(newBT,"1"))
+print(insert(newBT,"999"))
+print(levelOrderTraversal(newBT))
