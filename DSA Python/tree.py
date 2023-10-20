@@ -108,5 +108,5 @@ def insert(rootNode,data):
 # print(preOrderTraversal(newBT))
 print(levelOrderTraversal(newBT))
 # print(find(newBT,"1"))
-print(insert(newBT,"999"))
+print(insert(newBT,"6"))
 print(levelOrderTraversal(newBT))
