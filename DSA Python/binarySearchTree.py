@@ -13,37 +13,48 @@ class BinaryTree():
         if root is None:
             self.root = Node(data)
             return self.root #! It shall be removed
-        else:
-            pass
+        cursor = root
+        while cursor is not None:
+            if cursor.data < data:
+                if cursor.next is None:
+                    cursor.next = Node(data)
+                    return
+                cursor = cursor.next
+            if cursor.data > data:
+                if cursor.pre is None:
+                    cursor.pre = Node(data)
+                    return
+                cursor = cursor.pre
         self.length += 1
 
-    def preOrderTraversal(self):
-        if self.root is None:
-            return 'No Element Found'
+    def preOrderTraversal(self, rootNode):
+        if rootNode is None:
+            return
         else:
-            print(root.data)
-            self.preOrderTraversal(root.pre)
-            self.preOrderTraversal(root.next)
+            print(rootNode.data)
+            self.preOrderTraversal(rootNode.pre)
+            self.preOrderTraversal(rootNode.next)
 
-    def inOrderTraversal(self):
-        if self.root is None:
-            return 'No Element Found'
+    def inOrderTraversal(self, rootNode):
+        if rootNode is None:
+            return
         else:
-            self.inOrderTraversal(root.pre)
-            print(root.data)
-            self.inOrderTraversal(root.next)
+            self.preOrderTraversal(rootNode.pre)
+            print(rootNode.data)
+            self.preOrderTraversal(rootNode.next)
 
-    def postOrderTraversal(self):
-        if self.root is None:
-            return 'No Element Found'
+    def postOrderTraversal(self, rootNode):
+        if rootNode is None:
+            return
         else:
-            self.postOrderTraversal(root.pre)
-            self.postOrderTraversal(root.next)
-            print(root.data)
+            self.preOrderTraversal(rootNode.pre)
+            self.preOrderTraversal(rootNode.next)
+            print(rootNode.data)
+
 
     def levelOrderTraversal(self):
         if self.root is None:
-            return 'No Element Found'
+            print('No Element Found')
         else:
             queue = []
             queue.append(self.root)
@@ -53,15 +64,24 @@ class BinaryTree():
                 if self.root.pre is not None:queue.append(self.root.pre)
                 if self.root.next is not None:queue.append(self.root.next)
 
-    def remove(self):
+    def remove(self, data):
         pass
 
     def deleteBT(self):
-        pass
+        self.root.data = None
+        self.root.pre = None
+        self.root.next = None
+
 
 bst = BinaryTree()
-bst.insert(1)
-bst.preOrderTraversal(bst.root)
-bst.inOrderTraversal(bst.root)
-bst.postOrderTraversal(bst.root)
+bst.insert(5)
+bst.insert(3,bst.root)
+bst.insert(6, bst.root)
+bst.insert(2,bst.root)
+bst.insert(4,bst.root)
+bst.insert(7, bst.root)
+# bst.preOrderTraversal(bst.root)
+# bst.inOrderTraversal(bst.root)
+# bst.postOrderTraversal(bst.root)
+bst.levelOrderTraversal()
 
