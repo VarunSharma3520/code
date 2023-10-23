@@ -1,5 +1,3 @@
-a=input("Enter your name")
-print(a)
 import sys
 import matplotlib
 import matplotlib.pyplot as plt
