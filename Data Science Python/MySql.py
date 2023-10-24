@@ -1,5 +1,5 @@
 import pymysql
- #!database link:https://console.aiven.io/account/a46b5440bb59/project/datasciencelearn/services/mysql-afd228b/overview
+#!database link:https://console.aiven.io/account/a46b5440bb59/project/datasciencelearn/services/mysql-afd228b/overview
 
 timeout = 10
 connection = pymysql.connect(
