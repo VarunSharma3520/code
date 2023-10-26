@@ -1,15 +1,26 @@
 
 import numpy as np
 
+#? Array has homogenous memory allocation
+
+
 #! Creating array in np
-l1 = [1,2,3,4]
+# l1 = [1, 2, 3, 4]
 # print(np.array(l1))
+# print('shape: ', np.array(l1).shape)
+# print('size: ', np.array(l1).size)
+# print('type: ', np.array(l1).dtype)
+# print('dtype: ',np.array(l1).dtype)
+
+
 # print(type(np.array(l1)))
 
 #! numpy array intialise
 # print(np.zeros((5,4),dtype=int)) # ((rows,column))
 # print(np.full((4, 4),10 , dtype=int))  # ((rows,column))
+# print(np.ones((2,2)))
 # print(np.arange(10,51,5)) # start stop step
+# print(np.linspace(10, 51, 5))  # creates linear space between start stop space
 
 #! random interger in numpy
 # print(np.random.randint(1,100,5)) # start end total_num
@@ -20,13 +31,13 @@ l1 = [1,2,3,4]
 # print(l1)
 
 #! joining numpy array
-l1 = np.array([10, 20, 30, 40, 50])
-l2 = np.array([40, 50, 60, 70, 80])
+# l1 = np.array([10, 20, 30, 40, 50])
+# l2 = np.array([40, 50, 60, 70, 80])
 # print(np.vstack((l1,l2)))
 # print(np.hstack((l1,l2)))
 # print(np.column_stack((l1,l2)))
 
-#! intersection in np 
+#! intersection in np
 # print(np.intersect1d(l1,l2))
 # print(np.setdiff1d(l2,l1))
 
