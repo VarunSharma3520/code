@@ -43,8 +43,8 @@ import pandas as pd
 # df.iat[4,3] #seeks a value at df.at(row_value,column_value)
 # df.iat[4,3] = 11 #sets a value at df.at(row_value,column_value)
 # df.loc[:,'total_rooms'] # gets a portion of table table
-df['Name'].value_counts() # return count of distinct values in a row
-df.sort_value(by = 'name') # sort by name specified column
+# df['Name'].value_counts() # return count of distinct values in a row
+# df.sort_value(by = 'name') # sort by name specified column
 
 
 # data Types in pandas 

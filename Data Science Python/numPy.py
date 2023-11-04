@@ -64,5 +64,16 @@ import numpy as np
 # l11 = np.load('numbu.npy')
 # print(l11)
 
+#! element-wise operation on mulitiple arrays
+la = np.array([3,7,9,1])
+ka = np.array([4,8,10,2])
+ta = la +ka
+# print(ta)
 
-
+#! max, sum, mean, min, cumsum
+# print(ta.max(axis = 0))
+# print(ta.min())
+# print(ta.mean())
+# print(ta.sum())
+print(ta.sort())
+print(ta.cumsum())
