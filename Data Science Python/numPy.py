@@ -77,3 +77,10 @@ ta = la +ka
 # print(ta.sum())
 # print(ta.sort())
 # print(ta.cumsum())
+
+#! random with numpy
+# print(np.random.choice(ta))
+# print(np.random.choice(ta,2))
+# print(np.random.choice(ta,(2,3)))
+# print(np.random.randn(3,3))
+# print(np.random.randint(2,5))
