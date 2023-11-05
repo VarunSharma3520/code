@@ -75,5 +75,5 @@ ta = la +ka
 # print(ta.min())
 # print(ta.mean())
 # print(ta.sum())
-print(ta.sort())
-print(ta.cumsum())
+# print(ta.sort())
+# print(ta.cumsum())
