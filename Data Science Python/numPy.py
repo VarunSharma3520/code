@@ -84,3 +84,6 @@ ta = la +ka
 # print(np.random.choice(ta,(2,3)))
 # print(np.random.randn(3,3))
 # print(np.random.randint(2,5))
+# print(np.random.uniform(2,4,(3,3)))
+# print(np.random.uniform((3,10,1)))
+# print(np.random.randrange())
