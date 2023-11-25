@@ -132,7 +132,7 @@ ll.showTime()
 print(ll.find(3))
 print(ll.get(2))
 ll.setat(456,2)
-ll.pop(3) # Not working
+ll.pop(3)
 ll.popFirst()
 ll.remove(456)
 ll.showTime()
