@@ -1,0 +1,93 @@
+{
+	"Workspace-H1": {
+		"scope": "markdown",
+		"prefix": "h1",
+		"body": [
+			"# ${1:add your heading}",
+			"$2"
+		],
+		"description": "Workspace-H1"
+	},
+	"Workspace-H2": {
+		"scope": "markdown",
+		"prefix": "h2",
+		"body": [
+			"## ${1:add your heading}",
+			"$2"
+		],
+		"description": "Workspace-H2"
+	},
+	"Workspace-H3": {
+		"scope": "markdown",
+		"prefix": "h3",
+		"body": [
+			"### ${1:add your heading}",
+			"$2"
+		],
+		"description": "Workspace-H3"
+	},
+	"Workspace-H4": {
+		"scope": "markdown",
+		"prefix": "h4",
+		"body": [
+			"#### ${1:add your heading}",
+			"$2"
+		],
+		"description": "Workspace-H4"
+	},
+	"Workspace-H5": {
+		"scope": "markdown",
+		"prefix": "h5",
+		"body": [
+			"##### ${1:add your heading}",
+			"$2"
+		],
+		"description": "Workspace-H5"
+	},
+	"Workspace-BOLD": {
+		"scope": "markdown",
+		"prefix": "bold",
+		"body": [
+			"**${1:add your text}**",
+			"$2"
+		],
+		"description": "Workspace-BOLD"
+	},
+	"Workspace-ITALIC": {
+		"scope": "markdown",
+		"prefix": "italic",
+		"body": [
+			"**${1:add your text}**",
+			"$2"
+		],
+		"description": "Workspace-italics"
+	},
+	"Workspace-BUTTETIN": {
+		"scope": "markdown",
+		"prefix": "bulletin",
+		"body": [
+			"- ${1:add your text}",
+			"$2"
+		],
+		"description": "Workspace-bulletin"
+	},
+	"Workspace-LINK": {
+		"scope": "markdown",
+		"prefix": "link",
+		"body": [
+			"[${1:title}](${2:url})",
+			"$3"
+		],
+		"description": "Workspace-link"
+	},
+	"Workspace-IMAGE": {
+		"scope": "markdown",
+		"prefix": "image",
+		"body": [
+			"![${1:alt}](${2:src})",
+			"$3"
+		],
+		"description": "Workspace-image"
+	},
+	
+}
