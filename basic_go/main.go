@@ -1,4 +1,3 @@
-// First Go program
 package main
 
 import (
@@ -24,6 +23,7 @@ import (
 
 // Main function
 func main() {
+  api()
 	/* This is
 	multi-line comment*/
   fmt.Println("Hello world")
