@@ -176,7 +176,7 @@
   "terminal.integrated.copyOnSelection": true,
   "workbench.editor.doubleClickTabToToggleEditorGroupSizes": "maximize",
   "workbench.iconTheme": "vscode-icons",
-  "workbench.activityBar.location": "hidden",
+  "workbench.activityBar.location": "default",
   "workbench.colorTheme": "GitHub Dark Default",
   "workbench.statusBar.visible": true,
   "workbench.editor.showTabs": "none",
@@ -197,5 +197,18 @@
   "zenMode.hideActivityBar": false,
   "[lua]": {
     "editor.defaultFormatter": "yinfei.luahelper"
+  },
+  "files.associations": {
+    "stdio.h": "c",
+    "string.h": "c",
+    "types.h": "c",
+    "features.h": "c",
+    "stubs.h": "c"
+  },
+  "[c]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "[snippets]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
   }
 }

@@ -1,0 +1,69 @@
+{
+  "express_hello_world": {
+    "scope": "javascript,typescript",
+    "prefix": "hello_world_express",
+    "body": [
+      "const express = require('express')",
+      "const app = express()",
+      "const port = 3000",
+      "",
+      "app.get('/', (req, res) => {",
+      "  res.send('${1:Hello World!}')",
+      "})",
+      "",
+      "app.listen(port, () => {",
+      "  console.log(`https://localhost:\\${port}/`)",
+      "})",
+      "$0"
+    ],
+    "description": "express hello world starter"
+  },
+  "express_request": {
+    "scope": "javascript,typescript",
+    "prefix": "request_express",
+    "body": [
+      "app.${1|get,post,put,patch,delete|}('${2:/}', ${3:(req, res) => {  ${4:res.send('Hello World!')}})}",
+      "$0"
+    ],
+    "description": "express request"
+  },
+  "mongoose_model": {
+    "scope": "javascript,typescript",
+    "prefix": "model schema",
+    "body": [
+      "import mongoose, {Schema} from \"mongoose\";",
+      "",
+      "const ${1:user}Schema = new Schema(",
+      "    {",
+      "      ${3:username}: {",
+      "            $4",
+      "            type: String,",
+      "            required: true,",
+      "            unique: true,",
+      "            lowecase: true,",
+      "            trim: true, ",
+      "            index: true",
+      "        }",
+      "    },",
+      "    {",
+      "        timestamps: true",
+      "    }",
+      ")",
+      "",
+      "export const ${2:User} = mongoose.model('${2:User}', ${1:user}Schema);",
+      "$0"
+    ],
+    "description": "schema basic - mongoose"
+  },
+  "test": {
+    "scope": "javascript,typescript",
+    "prefix": "test",
+    "body": [
+      "console.log($RANDOM_HEX)",
+      "$0"
+    ],
+    "description": "console.log - test"
+  },
+  
+
+}

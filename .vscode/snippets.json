@@ -1,0 +1,19 @@
+{
+  "snippets - Json": {
+    "scope": "json,.code-snippets",
+    "prefix": "snippets",
+    "body": [
+      "",
+      "\"${1:name_of_snippet}\": {",
+      "  \"scope\": \"${2:scope}\",",
+      "  \"prefix\": \"${3:prefix}\",",
+      "  \"body\": [",
+      "    \"${0}\"",
+      "  ],",
+      "  \"description\": \"${4:description}\"",
+      "}",
+      ""
+    ],
+    "description": "Make Snippets"
+  }
+}
