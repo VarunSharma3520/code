@@ -176,7 +176,7 @@
   "terminal.integrated.copyOnSelection": true,
   "workbench.editor.doubleClickTabToToggleEditorGroupSizes": "maximize",
   "workbench.iconTheme": "vscode-icons",
-  "workbench.activityBar.location": "default",
+  "workbench.activityBar.location": "hidden",
   "workbench.colorTheme": "GitHub Dark Default",
   "workbench.statusBar.visible": true,
   "workbench.editor.showTabs": "none",
