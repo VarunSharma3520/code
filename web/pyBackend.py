@@ -14,3 +14,27 @@ def login():
 
 if __name__ == '__main__':
     app.run()
+
+@app.route('/delete', methods=['DELETE'])
+def delete():
+    data = {
+        'message': 'Deleted'
+        }
+    return jsonify(data)
+
+#  write for posting also
+@app.route('/posting', methods=['POST'])
+def posting():
+    data = {
+        'message': 'Post'
+        }
+    return jsonify(data)
+
+#  write a hello world for "/getting" also
+@app.route('/getting', methods=['GET'])
+def getting():
+    data = {
+        'message': 'Get'
+        }
+    return jsonify(data)
+

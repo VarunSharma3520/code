@@ -30,7 +30,7 @@ enum Color {
 }
 
 fn main() {
-
+  println!("hi there everyone");
   let emp1 = Employee {
     company: String::from("TutorialsPoint"),
     name: String::from("Mohtashim"),

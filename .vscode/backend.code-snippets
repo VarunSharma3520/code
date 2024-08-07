@@ -64,6 +64,26 @@
     ],
     "description": "console.log - test"
   },
-  
-
+  "Controller Definition": {
+    "prefix": "defaultController",
+    "body": [
+      "const ${1:ControllerName} = (${2:params}) => {",
+      "${3:console.log($RANDOM_HEX)}",
+      "};",
+      "",
+      "module.exports = ${1:ControllerName};"
+    ],
+    "description": "Creates a basic controller definition"
+  },
+  "Express Router": {
+    "prefix": "defaultRoute",
+    "body": [
+      "const express = require('express');",
+      "",
+      "const router = express.Router();",
+      "",
+      "module.exports = router;"
+    ],
+    "description": "Creates a basic Express router"
+  },
 }
