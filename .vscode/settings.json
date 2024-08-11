@@ -13,9 +13,11 @@
 //     "editorIndentGuide.background4": "#001aff",
 //     "editorIndentGuide.background5": "#ff00b3",
 //     "editorIndentGuide.background6": "#00ffff",
-//     "editor.background": "#00050c", // main editor background
-//     "editorStickyScroll.border": "#ff000000", // no color made
-//     "statusBar.border": "#ff000000", // no color made
+//     "editor.background": "#00050c",
+//     "editorStickyScroll.border": "#ff000000",
+//     "statusBar.border": "#ff000000",
+//     "statusBarItem.activeBackground": "#ff0000",
+//     "statusBar.focusBorder": "#bdbd3e00",
 //     "editor.lineHighlightBorder": "#ff000000",
 //     "editor.lineHighlightBackground": "#282828fb",
 //     "editorLineNumber.foreground": "#6c6c6c",
@@ -23,9 +25,12 @@
 //     "editorGroupHeader.tabsBackground": "#00000000",
 //     "editorCursor.foreground": "#ff007b",
 //     "editorGroupHeader.border": "#000000",
-//     "editorGutter.background": "#00000000", // line bar background color
+//     "editorGutter.background": "#00000000",
 //     "statusBar.background": "#060012",
+//     "statusBar.debuggingForeground": "#ffffff",
 //     "statusBar.foreground": "#c2c2c2",
+//     "statusBar.noFolderBackground": "#282828fb",
+//     "statusBar.debuggingBackground": "#282828fb",
 //     "activityBar.background": "#000000",
 //     "sideBar.background": "#0f0f0f",
 //     "menu.foreground": "#c5c5c5",
@@ -34,7 +39,7 @@
 //     "titleBar.activeBackground": "#000000",
 //     "titleBar.inactiveBackground": "#000000",
 //     "terminalCursor.foreground": "#ffffff",
-//     "terminal.background": "#000000",
+//     "terminal.background": "#080F22",
 //     "tab.activeBackground": "#000000",
 //     "tab.inactiveBackground": "#000000",
 //     "tab.inactiveForeground": "#8f8f8f",
@@ -83,6 +88,24 @@
 //       "gutterIcon": true
 //     }
 //   },
+//   "emmet.includeLanguages": {
+//     "blade": "html",
+//     "vue-html": "html",
+//     "vue": "html",
+//     "react": "html",
+//     "javascript": "html"
+//   },
+//   "search.exclude": {
+//     "**/vendor/{[^l],?[^ai]}*": true,
+//     "**/public/{[^i],?[^n]}*": true,
+//     "**/node_modules": true,
+//     "**/dist": true,
+//     "**/_ide_helper.php": true,
+//     "**/composer.lock": true,
+//     "**/package-lock.json": true,
+//     "storage": true,
+//     ".phpunit.result.cache": true
+//   },
 //   "indentRainbow.colors": [
 //     "rgba(255,255,64,0.15)",
 //     "rgba(127,255,127,0.15)",
@@ -104,6 +127,9 @@
 //   "editor.codeActionsOnSave": {
 //     "source.fixAll": "explicit"
 //   },
+//   "[rust]": {
+//     "editor.defaultFormatter": "rust-lang.rust-analyzer"
+//   },
 //   "vimspired.keybindings": {
 //     "j": ["workbench.action.nextEditor"],
 //     "k": ["workbench.action.previousEditor"],
@@ -116,9 +142,16 @@
 //     "c": ["editor.action.clipboardPasteAction"],
 //     "v": ["editor.action.clipboardCopyAction"]
 //   },
-//   "[rust]": {
-//     "editor.defaultFormatter": "rust-lang.rust-analyzer"
-//   },
+//   "vim.insertModeKeyBindings": [
+//     {
+//       "before": ["j", "k"],
+//       "after": ["<Esc>"]
+//     }
+//   ],
+//   "vim.statusBarColorControl": true,
+//   "vim.statusBarColors.normal": "#282828fb",
+//   "vim.statusBarColors.insert": "#6c6c6c",
+//   "vim.statusBarColors.visual": "#3a3939",
 //   "vim.easymotion": true,
 //   "vim.incsearch": true,
 //   "vim.useSystemClipboard": true,
@@ -131,15 +164,9 @@
 //   "vim.cursorStylePerMode.visualblock": "block-outline",
 //   "vim.cursorStylePerMode.visualline": "block-outline",
 //   "vim.leader": "<space>",
-//   "vim.insertModeKeyBindings": [
-//     {
-//       "before": ["j", "k"],
-//       "after": ["<Esc>"]
-//     }
-//   ],
 //   "cSpell.userWords": ["cloudcode", "Colour", "cupertino", "rgba"],
 //   "dart.openDevTools": "flutter",
-//   "glassit.alpha": 200,
+//   "glassit.alpha": 225,
 //   "git.autofetch": true,
 //   "cloudcode.duetAI.inlineSuggestions.enableAuto": true,
 //   "cloudcode.project": "idyllic-gear-411911",
@@ -163,52 +190,39 @@
 //   "editor.suggestSelection": "first",
 //   "editor.tabCompletion": "onlySnippets",
 //   // "editor.lineNumbers": "relative",
+//   "editor.minimap.enabled": false,
 //   "zenMode.hideLineNumbers": false,
 //   "zenMode.showTabs": "none",
-//   "zenMode.hideStatusBar": false,
+//   // "zenMode.hideStatusBar": false,
+//   "zenMode.hideActivityBar": false,
 //   "zenMode.centerLayout": false,
 //   // "zenMode.silentNotifications": false,
 //   "terminal.integrated.cursorStyle": "line",
 //   "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font','Dank Mono'",
-//   "terminal.integrated.fontSize": 18,
+//   "terminal.integrated.fontSize": 20,
 //   "terminal.integrated.fontWeightBold": "bold",
 //   "terminal.integrated.suggest.enabled": true,
 //   "terminal.integrated.copyOnSelection": true,
 //   "workbench.editor.doubleClickTabToToggleEditorGroupSizes": "maximize",
-//   "workbench.iconTheme": "vscode-icons",
-//   "workbench.activityBar.location": "hidden",
-//   "workbench.colorTheme": "GitHub Dark Default",
 //   "workbench.statusBar.visible": true,
-//   "workbench.editor.showTabs": "none",
+//   "workbench.colorTheme": "GitHub Dark Default",
+//   // "workbench.editor.showTabs": "none",
 //   "workbench.sideBar.location": "right",
 //   "workbench.editor.editorActionsLocation": "hidden",
 //   "workbench.layoutControl.enabled": false,
 //   "window.menuBarVisibility": "hidden",
 //   "window.commandCenter": false,
+//   "window.customTitleBarVisibility": "auto",
 //   "prettier.tabWidth": 2,
 //   "prettier.singleQuote": false,
 //   "prettier.singleAttributePerLine": true,
 //   "prettier.bracketSameLine": true,
 //   // "breadcrumbs.enabled": false,
-//   "editor.minimap.enabled": false,
-//   "window.customTitleBarVisibility": "auto",
-//   "files.autoSave": "afterDelay",
 //   "diffEditor.codeLens": true,
-//   "zenMode.hideActivityBar": false,
-//   "[lua]": {
-//     "editor.defaultFormatter": "yinfei.luahelper"
+//   "files.autoSave": "afterDelay",
+//   "[shellscript]": {
+//     "editor.defaultFormatter": "foxundermoon.shell-format"
 //   },
-//   "files.associations": {
-//     "stdio.h": "c",
-//     "string.h": "c",
-//     "types.h": "c",
-//     "features.h": "c",
-//     "stubs.h": "c"
-//   },
-//   "[c]": {
-//     "editor.defaultFormatter": "ms-vscode.cpptools"
-//   },
-//   "[snippets]": {
-//     "editor.defaultFormatter": "vscode.json-language-features"
-//   }
+//   "editor.inlineSuggest.suppressSuggestions": true,
+//   "workbench.activityBar.location": "hidden"
 // }
