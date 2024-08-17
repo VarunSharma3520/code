@@ -46,17 +46,8 @@
     "when": "editorTextFocus && vim.mode == 'Normal'"
   },
   {
-    "key": "alt+v",
+    "key": "alt+x",
     "command": "toggleVim"
-  },
-  {
-    "key": "s",
-    "command": "metaGo.gotoSGmart",
-    "when": "editorTextFocus && vim.mode == 'Normal'"
-  },
-  {
-    "key": "alt+/",
-    "command": "-metaGo.gotoSmart"
   },
   {
     "key": "escape escape",
@@ -69,8 +60,100 @@
     "when": "editorTextFocus && vim.active && !inDebugRepl && vim.mode == 'Visual'"
   },
   {
-    "key": "escape",
-    "command": "-extension.vim_escape",
-    "when": "editorTextFocus && vim.active && !inDebugRepl"
+    "key": "s",
+    "command": "metaGo.gotoSmart",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
+    "key": "alt+/",
+    "command": "-metaGo.gotoSmart"
+  },
+  {
+    "key": "s",
+    "command": "metaGo.selectSmart",
+    "when": "editorTextFocus && vim.mode == 'Visual'"
+  },
+  {
+    "key": "ctrl+alt+/",
+    "command": "-metaGo.selectSmart"
+  },
+  {
+    "key": "space s",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
+    "key": "alt+s",
+    "command": "editor.action.insertSnippet",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "alt+j",
+    "command": "workbench.action.focusLeftGroup"
+  },
+  {
+    "key": "ctrl+k ctrl+left",
+    "command": "-workbench.action.focusLeftGroup"
+  },
+  {
+    "key": "alt+k",
+    "command": "workbench.action.focusRightGroup"
+  },
+  {
+    "key": "ctrl+k ctrl+right",
+    "command": "-workbench.action.focusRightGroup"
+  },
+  {
+    "key": "ctrl+shift+w",
+    "command": "-workbench.action.closeWindow"
+  },
+  {
+    "key": "alt+e",
+    "command": "workbench.action.createTerminalEditor"
+  },
+  {
+    "key": "alt+left",
+    "command": "cursorHome",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "home",
+    "command": "-cursorHome",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+alt+left",
+    "command": "cursorHomeSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+home",
+    "command": "-cursorHomeSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "alt+right",
+    "command": "cursorEnd",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "end",
+    "command": "-cursorEnd",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+alt+right",
+    "command": "cursorEndSelect",
+    "when": "textInputFocus"
+  },
+  {
+    "key": "shift+end",
+    "command": "-cursorEndSelect",
+    "when": "textInputFocus"
   }
+  // {
+  //   "key": "escape",
+  //   "command": "-extension.vim_escape",
+  //   "when": "editorTextFocus && vim.active && !inDebugRepl"
+  // }
 ]
