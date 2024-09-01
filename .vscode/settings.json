@@ -26,9 +26,9 @@
 //     "editorCursor.foreground": "#ff007b",
 //     "editorGroupHeader.border": "#000000",
 //     "editorGutter.background": "#00000000",
-//     "statusBar.background": "#060012",
+//     "statusBar.background": "#282828fb",
 //     "statusBar.debuggingForeground": "#ffffff",
-//     "statusBar.foreground": "#c2c2c2",
+//     "statusBar.foreground": "#ffffff",
 //     "statusBar.noFolderBackground": "#282828fb",
 //     "statusBar.debuggingBackground": "#282828fb",
 //     "activityBar.background": "#000000",
@@ -121,11 +121,14 @@
 //     "rgba(124,54,43,0.15)",
 //     "rgba(200,86,49,0.15)"
 //   ],
+//   "editor.codeActionsOnSave": {
+//     "source.fixAll": "explicit"
+//   },
 //   "[go]": {
 //     "editor.defaultFormatter": "golang.go"
 //   },
-//   "editor.codeActionsOnSave": {
-//     "source.fixAll": "explicit"
+//   "[shellscript]": {
+//     "editor.defaultFormatter": "foxundermoon.shell-format"
 //   },
 //   "[rust]": {
 //     "editor.defaultFormatter": "rust-lang.rust-analyzer"
@@ -166,7 +169,7 @@
 //   "vim.leader": "<space>",
 //   "cSpell.userWords": ["cloudcode", "Colour", "cupertino", "rgba"],
 //   "dart.openDevTools": "flutter",
-//   "glassit.alpha": 225,
+//   "glassit.alpha": 200,
 //   "git.autofetch": true,
 //   "cloudcode.duetAI.inlineSuggestions.enableAuto": true,
 //   "cloudcode.project": "idyllic-gear-411911",
@@ -189,8 +192,8 @@
 //   "editor.selectionHighlight": false,
 //   "editor.suggestSelection": "first",
 //   "editor.tabCompletion": "onlySnippets",
-//   // "editor.lineNumbers": "relative",
 //   "editor.minimap.enabled": false,
+//   // "editor.lineNumbers": "relative",
 //   "zenMode.hideLineNumbers": false,
 //   "zenMode.showTabs": "none",
 //   // "zenMode.hideStatusBar": false,
@@ -206,7 +209,8 @@
 //   "workbench.editor.doubleClickTabToToggleEditorGroupSizes": "maximize",
 //   "workbench.statusBar.visible": true,
 //   "workbench.colorTheme": "GitHub Dark Default",
-//   // "workbench.editor.showTabs": "none",
+//   "workbench.editor.wrapTabs": true,
+//   "workbench.editor.shows": "none",
 //   "workbench.sideBar.location": "right",
 //   "workbench.editor.editorActionsLocation": "hidden",
 //   "workbench.layoutControl.enabled": false,
@@ -220,9 +224,6 @@
 //   // "breadcrumbs.enabled": false,
 //   "diffEditor.codeLens": true,
 //   "files.autoSave": "afterDelay",
-//   "[shellscript]": {
-//     "editor.defaultFormatter": "foxundermoon.shell-format"
-//   },
 //   "editor.inlineSuggest.suppressSuggestions": true,
 //   "workbench.activityBar.location": "hidden"
 // }
