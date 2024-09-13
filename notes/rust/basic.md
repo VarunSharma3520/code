@@ -1,6 +1,7 @@
 # Rust
 This cheatsheet covers the fundamental aspects of Rust programming language.[official Rust documentation](https://rust-lang.org/).
 
+## Rustlings
 [Rust in a Nutshell](https://projects.100xdevs.com/tracks/rust-bootcamp/Rust-Bootcamp-1)
 
 * Syntax tokens somewhat similar to C / C++ / Go
