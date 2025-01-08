@@ -1,17 +1,18 @@
-This cheatsheet covers the fundamental aspects of [official tailwindcss documentation](https://tailwindcss.com/docs/installation).
+# Installation of Tailwind CSS into React
 
-```markdown
-# Adding Tailwind CSS to a React Project
+This cheat sheet covers the fundamental aspects of [official tailwindcss documentation](https://tailwindcss.com/docs/installation).
 
 This guide explains how to add Tailwind CSS to a React project created with Create React App.
-
 ## Step 1: Set Up Your React Project
 
 If you haven't already set up a React project, you can do so using Create React App:
 
 ```bash
-npx create-react-app my-app
-cd my-app
+mkdir myapp &&
+npm create vite@latest &&
+cd myapp &&
+npm i &&
+npm run dev
 ```
 
 ## Step 2: Install Tailwind CSS
@@ -22,7 +23,7 @@ Install Tailwind CSS and its dependencies:
 npm install -D tailwindcss postcss autoprefixer
 ```
 
-## Step 3: Initialize Tailwind CSS
+## Step 3: Initialise Tailwind CSS
 
 Generate the `tailwind.config.js` and `postcss.config.js` files:
 
@@ -85,7 +86,7 @@ ReactDOM.render(
 Run your project to see Tailwind CSS in action:
 
 ```bash
-npm start
+npm run dev
 ```
 
 Now you can use Tailwind CSS classes in your React components.
@@ -110,6 +111,4 @@ export default App;
 
 ## Conclusion
 
-You have successfully integrated Tailwind CSS into your React project. Now you can utilize Tailwind's utility-first CSS framework to build your UI components.
-```
-
+You have successfully integrated Tailwind CSS into your React project. Now you can utilise Tailwind's utility-first CSS framework to build your UI components.
