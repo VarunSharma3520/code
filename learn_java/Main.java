@@ -4,7 +4,7 @@ public class Main {
   // Method
   public static String myMethod(String[] args) {
     System.out.println("I just got executed from myMethod!");
-    // System.out.println(args[0]);
+//     System.out.println(args[0]);
     return "myMethod return String";
   }
 
@@ -27,6 +27,9 @@ public class Main {
   }
 
   public static void main(String[] args) {
+    Car vahan = new Car();
+    vahan.color = "pink";
+    vahan.drive();
     // userInput();
     userInput();
 
@@ -153,8 +156,8 @@ public class Main {
 
     // methods example
     System.out.println("Methods example");
-    String resultofMyMethod = myMethod(args);
-    System.out.println(resultofMyMethod);
+    String resultMyMethod = myMethod(args);
+    System.out.println(resultMyMethod);
 
     // method overloading
     System.out.println("Method overloading example");
