@@ -1,0 +1,17 @@
+services:
+  load_testing:
+    image: grafana/k6:latest
+    container_name: load_testing_cont
+    working_dir: /scripts
+
+    volumes:
+      - ./k6:/scripts
+
+    entrypoint: ["/bin/sh", "-c"]
+    command: "tail -f /dev/null"
+
+    ports:
+      - "6565:6565"
+
+    restart: "no"
+
