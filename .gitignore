@@ -236,6 +236,16 @@ pyrightconfig.json
 
 __pycache__/
 
+### Terraform ###
+terraform.tfstate
+terraform.tfstate.backup
+.terraform/
+
+# Ignore key pair files
+terraform/key_pair/key
+
+*.pub
+
 # Terraform override files
 *.tfvars
 override.tf
